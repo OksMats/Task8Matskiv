@@ -8,6 +8,7 @@ public class Triangle extends Shape{
         setColor(colorName, opacity);
         setB(b);
         setH(h);
+        countSquare();
     }
 
     public void setB(float b){
@@ -28,8 +29,8 @@ public class Triangle extends Shape{
 
     @Override
     public void countSquare() {
-        float circleR = (getB()*getH())/2;
-        setSquare(circleR);
+        float squareT = (getB()*getH())/2;
+        setSquare(squareT);
     }
 
     @Override

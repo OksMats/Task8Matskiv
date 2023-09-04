@@ -8,6 +8,7 @@ public class Rectangle extends Shape{
         setColor(colorName,opacity);
         setA(a);
         setB(b);
+        countSquare();
     }
     public void setA(float a){
         this.a = a;
@@ -25,8 +26,8 @@ public class Rectangle extends Shape{
 
     @Override
     public void countSquare() {
-        float circleR = getA()*getB();
-        setSquare(circleR);
+        float squareR = getA()*getB();
+        setSquare(squareR);
     }
 
     @Override

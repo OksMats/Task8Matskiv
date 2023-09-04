@@ -6,6 +6,7 @@ public class Circle extends Shape{
         setName("Circle");
         setColor(colorName, opacity);
         setRadius(radius);
+        countSquare();
     }
 
     public void setRadius(float radius){
@@ -18,8 +19,8 @@ public class Circle extends Shape{
 
     @Override
     public void countSquare() {
-        float circleS = getPI()*getRadius()*getRadius();
-        setSquare(circleS);
+        float squareC = getPI()*getRadius()*getRadius();
+        setSquare(squareC);
     }
 
     @Override

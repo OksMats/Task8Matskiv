@@ -8,6 +8,7 @@ public class Oval extends Shape{
         setColor(colorName,opacity);
         setA(a);
         setB(b);
+        countSquare();
     }
 
     public void setA(float a){
@@ -29,8 +30,8 @@ public class Oval extends Shape{
 
     @Override
     public void countSquare() {
-        float circleO = getPI()*getA()*getB();
-        setSquare(circleO);
+        float squareO = getPI()*getA()*getB();
+        setSquare(squareO);
     }
 
     @Override

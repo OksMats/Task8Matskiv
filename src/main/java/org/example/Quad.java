@@ -6,6 +6,7 @@ public class Quad extends Shape{
         setName("Quad");
         setColor(colorName,opacity);
         setA(a);
+        countSquare();
     }
 
     public void setA(float a){
@@ -17,8 +18,8 @@ public class Quad extends Shape{
 
     @Override
     public void countSquare() {
-        float circleQ = getA()*getA();
-        setSquare(circleQ);
+        float squareQ = getA()*getA();
+        setSquare(squareQ);
     }
 
     @Override

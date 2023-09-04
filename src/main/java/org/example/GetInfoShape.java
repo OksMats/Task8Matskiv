@@ -13,7 +13,7 @@ public class GetInfoShape {
         return gis;
     }
     public void getFullInfo(Shape sh){
-        String res = sh.toString() + ", "+ sh.moreInfo();
+        String res = sh.toString() + ", "+ sh.moreInfo() + ", Square: " + sh.getSquare();
         System.out.println(res);
     }
     public void getShapeName(Shape sh){
@@ -24,5 +24,8 @@ public class GetInfoShape {
     }
     public void getMoreInfo(Shape sh){
         System.out.println(sh.moreInfo());
+    }
+    public void getSquare(Shape sh){
+        System.out.println("Square: " + sh.getSquare());
     }
 }
